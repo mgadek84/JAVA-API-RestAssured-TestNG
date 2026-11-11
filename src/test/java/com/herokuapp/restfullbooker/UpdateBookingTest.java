@@ -37,7 +37,7 @@ public class UpdateBookingTest extends BaseTest {
 
         // Update booking
         Response responseUpdate = RestAssured.given().auth().preemptive().basic("admin", "password123").contentType(ContentType.JSON).
-                body(body.toString()).post("https://restful-booker.herokuapp.com/booking/" + bookingid);
+                body(body.toString()).put("https://restful-booker.herokuapp.com/booking/" + bookingid);
         responseUpdate.print();
 
 
@@ -54,22 +54,22 @@ public class UpdateBookingTest extends BaseTest {
         // Verify all fields
         SoftAssert softAssert = new SoftAssert();
         String actualFirstName = responseUpdate.jsonPath().getString("firstname");
-        softAssert.assertEquals(actualFirstName, "Mark", "Value in response does not match expected value");
+        softAssert.assertEquals(actualFirstName, "Ania", "Value in response does not match expected value");
 
         String actualLastName = responseUpdate.jsonPath().getString("lastname");
-        softAssert.assertEquals(actualFirstName, "Mark");
+        softAssert.assertEquals(actualLastName, "Gądek");
 
         int Price = responseUpdate.jsonPath().get("totalprice");
-        softAssert.assertEquals(Price, 742, "Value has changed!");
+        softAssert.assertEquals(Price, 199, "Value has changed!");
 
         boolean depositpaid = responseUpdate.jsonPath().getBoolean("depositpaid");
-        softAssert.assertTrue(depositpaid, "Error, verify! Deposit should be true but it's not");
+        softAssert.assertFalse(depositpaid, "Error, verify! Deposit should be true but it's not");
 
         String actualCheckin = responseUpdate.jsonPath().getString("bookingdates.checkin");
-        softAssert.assertEquals(actualCheckin, "2023-04-06", "Incorrect checkin date!");
+        softAssert.assertEquals(actualCheckin, "2026-11-20", "Incorrect checkin date!");
 
         String actualCheckout = responseUpdate.jsonPath().getString("bookingdates.checkout");
-        softAssert.assertEquals(actualCheckout, "2023-04-06", "Incorrect checkout date!");
+        softAssert.assertEquals(actualCheckout, "2026-11-25", "Incorrect checkout date!");
 
         softAssert.assertAll();
     }
