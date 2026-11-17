@@ -1,0 +1,337 @@
+{
+  "captured": "2026-11-16",
+  "operationName": "bookingAirSearch",
+  "note": "One full unbundled offer is kept (the first of 104). Fare-family HTML and the other 103 offers are summarized. No passenger, contact, loyalty, or payment fields were present. Fare-family entries keep only the en_GB label. HTML marketingTexts and the other languages were removed. brandAncillaries.flightAncillary was an empty list on every family.",
+  "data": {
+    "bookingAirSearch": {
+      "__typename": "DigitalConnectOriginalResponse",
+      "originalResponse": {
+        "searchResultMetaData": {
+          "branded": true,
+          "multipleDateResult": true,
+          "composedResult": false,
+          "interlineRoute": false,
+          "contextShopping": false
+        },
+        "currency": "AUD",
+        "promocodeValid": false,
+        "negotiateFarePresent": true,
+        "conversionRatesFound": false,
+        "warnings": [],
+        "soldOutDatesOutbound": [],
+        "soldOutDatesInbound": [],
+        "noneScheduledDatesOutbound": [],
+        "noneScheduledDatesInbound": [],
+        "fareFamilies": [
+          {
+            "brandId": "LT",
+            "fareFamilyRemarkRPH": 0,
+            "brandLabel": {
+              "languageId": "en_GB",
+              "marketingText": "Lite",
+              "programId": "190159"
+            }
+          },
+          {
+            "brandId": "CH",
+            "fareFamilyRemarkRPH": 0,
+            "brandLabel": {
+              "languageId": "en_GB",
+              "marketingText": "Choice",
+              "programId": "190159"
+            }
+          },
+          {
+            "brandId": "FL",
+            "fareFamilyRemarkRPH": 0,
+            "brandLabel": {
+              "languageId": "en_GB",
+              "marketingText": "Flex",
+              "programId": "190159"
+            }
+          },
+          {
+            "brandId": "BU",
+            "fareFamilyRemarkRPH": 0,
+            "brandLabel": {
+              "languageId": "en_GB",
+              "marketingText": "Business",
+              "programId": "190159"
+            }
+          }
+        ],
+        "unbundledOffers": [
+          [
+            {
+              "shoppingBasketHashCode": 1727182115,
+              "brandId": "LT",
+              "soldout": false,
+              "bundlePrice": {
+                "fare": {
+                  "alternatives": [
+                    [
+                      {
+                        "amount": 106.98,
+                        "currency": "AUD"
+                      }
+                    ]
+                  ]
+                },
+                "taxes": {
+                  "alternatives": [
+                    [
+                      {
+                        "amount": 43.03,
+                        "currency": "AUD"
+                      }
+                    ]
+                  ]
+                },
+                "total": {
+                  "alternatives": [
+                    [
+                      {
+                        "amount": 150.01,
+                        "currency": "AUD"
+                      }
+                    ]
+                  ]
+                }
+              },
+              "availableObFees": [],
+              "seatsRemaining": {
+                "count": 9,
+                "lowAvailability": false
+              },
+              "itineraryPart": [
+                {
+                  "@type": "ItineraryPart",
+                  "@id": "1",
+                  "segments": [
+                    {
+                      "@type": "Segment",
+                      "@id": "2",
+                      "segmentOfferInformation": {
+                        "flightsMiles": 439,
+                        "awardFare": false
+                      },
+                      "duration": 95,
+                      "cabinClass": "Economy",
+                      "equipment": "7M8",
+                      "aircraftLeaseText": "VIRGIN AUST INTL FOR VIRGIN AUST",
+                      "flight": {
+                        "flightNumber": 898,
+                        "operatingFlightNumber": 898,
+                        "airlineCode": "VA",
+                        "operatingAirlineCode": "VA",
+                        "stopAirports": [],
+                        "advisories": [],
+                        "departureTerminal": "2",
+                        "arrivalTerminal": "3"
+                      },
+                      "origin": "SYD",
+                      "destination": "MEL",
+                      "departure": "2026-12-07T21:30:00",
+                      "arrival": "2026-12-07T23:05:00",
+                      "departureGMTOffset": "+11:00",
+                      "arrivalGMTOffset": "+11:00",
+                      "bookingClass": "M",
+                      "layoverDuration": 0,
+                      "fareBasis": "MZLT0",
+                      "subjectToGovernmentApproval": false,
+                      "fareComponentBeginAirport": "SYD",
+                      "fareComponentEndAirport": "MEL",
+                      "fareComponentDirectionality": "FROM",
+                      "meals": [
+                        {
+                          "passengerType": "ADT",
+                          "mealCode": "G"
+                        }
+                      ],
+                      "segmentRef": "841892112903785526"
+                    }
+                  ],
+                  "stops": 0,
+                  "totalDuration": 95,
+                  "connectionInformations": [],
+                  "bookingClass": "M",
+                  "programIDs": [
+                    "190159"
+                  ],
+                  "programCodes": [
+                    "VAC"
+                  ],
+                  "advisories": []
+                }
+              ],
+              "cabinClass": "Economy",
+              "offerInformation": {
+                "discounted": false,
+                "negotiated": true,
+                "negotiatedType": "OTHER"
+              },
+              "advisories": [],
+              "taxes": {
+                "alternatives": [
+                  [
+                    {
+                      "amount": 43.03,
+                      "currency": "AUD"
+                    }
+                  ]
+                ]
+              },
+              "fare": {
+                "alternatives": [
+                  [
+                    {
+                      "amount": 106.98,
+                      "currency": "AUD"
+                    }
+                  ]
+                ]
+              },
+              "total": {
+                "alternatives": [
+                  [
+                    {
+                      "amount": 150.01,
+                      "currency": "AUD"
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        ],
+        "unbundledAlternateDateOffersSummary": [
+          {
+            "status": "AVAILABLE",
+            "brandId": "LT",
+            "cabinClass": "Economy",
+            "departure": "2026-12-04T06:00:00",
+            "origin": "SYD",
+            "destination": "MEL",
+            "flightNumber": 800,
+            "total": {
+              "amount": 188,
+              "currency": "AUD"
+            },
+            "seatsRemaining": {
+              "count": 9,
+              "lowAvailability": false
+            }
+          },
+          {
+            "status": "AVAILABLE",
+            "brandId": "LT",
+            "cabinClass": "Economy",
+            "departure": "2026-12-05T07:00:00",
+            "origin": "SYD",
+            "destination": "MEL",
+            "flightNumber": 808,
+            "total": {
+              "amount": 233,
+              "currency": "AUD"
+            },
+            "seatsRemaining": {
+              "count": 9,
+              "lowAvailability": false
+            }
+          },
+          {
+            "status": "AVAILABLE",
+            "brandId": "LT",
+            "cabinClass": "Economy",
+            "departure": "2026-12-06T07:00:00",
+            "origin": "SYD",
+            "destination": "MEL",
+            "flightNumber": 808,
+            "total": {
+              "amount": 159.01,
+              "currency": "AUD"
+            },
+            "seatsRemaining": {
+              "count": 9,
+              "lowAvailability": false
+            }
+          },
+          {
+            "status": "AVAILABLE",
+            "brandId": "LT",
+            "cabinClass": "Economy",
+            "departure": "2026-12-07T21:30:00",
+            "origin": "SYD",
+            "destination": "MEL",
+            "flightNumber": 898,
+            "total": {
+              "amount": 150.01,
+              "currency": "AUD"
+            },
+            "seatsRemaining": {
+              "count": 9,
+              "lowAvailability": false
+            }
+          },
+          {
+            "status": "AVAILABLE",
+            "brandId": "LT",
+            "cabinClass": "Economy",
+            "departure": "2026-12-08T07:15:00",
+            "origin": "SYD",
+            "destination": "MEL",
+            "flightNumber": 810,
+            "total": {
+              "amount": 150.01,
+              "currency": "AUD"
+            },
+            "seatsRemaining": {
+              "count": 3,
+              "lowAvailability": false
+            }
+          },
+          {
+            "status": "AVAILABLE",
+            "brandId": "LT",
+            "cabinClass": "Economy",
+            "departure": "2026-12-09T06:00:00",
+            "origin": "SYD",
+            "destination": "MEL",
+            "flightNumber": 800,
+            "total": {
+              "amount": 150.01,
+              "currency": "AUD"
+            },
+            "seatsRemaining": {
+              "count": 9,
+              "lowAvailability": false
+            }
+          },
+          {
+            "status": "AVAILABLE",
+            "brandId": "LT",
+            "cabinClass": "Economy",
+            "departure": "2026-12-10T10:30:00",
+            "origin": "SYD",
+            "destination": "MEL",
+            "flightNumber": 832,
+            "total": {
+              "amount": 200,
+              "currency": "AUD"
+            },
+            "seatsRemaining": {
+              "count": 9,
+              "lowAvailability": false
+            }
+          }
+        ]
+      }
+    }
+  },
+  "omittedShape": {
+    "unbundledOffers": "1 direction, 104 offers, all departure date 2026-12-07, all nonstop SYD-MEL, 26 flight numbers, 4 brands each (LT, CH, FL, BU). 78 cabinClass Economy, 26 Business. soldout false on all. shoppingBasketHashCode unique per offer.",
+    "bundledOffers": "empty list",
+    "brandedResults.itineraryPartBrands": "same offers grouped by itinerary part and brand; prices repeat unbundledOffers",
+    "priceAmountJsonTypes": "JSON number. Whole amounts are integers (188). Amounts with cents are decimals (150.01). Never a string in this payload."
+  }
+}
